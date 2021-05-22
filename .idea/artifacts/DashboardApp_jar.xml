@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DashboardApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/DashboardApp_jar</output-path>
+    <root id="archive" name="DashboardApp.jar">
+      <element id="module-output" name="DashboardApp" />
+      <element id="module-output" name="Data Access Layer" />
+    </root>
+  </artifact>
+</component>

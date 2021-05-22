@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DAL">
+    <output-path>$PROJECT_DIR$/out/artifacts/DAL</output-path>
+    <root id="archive" name="DAL.jar">
+      <element id="module-output" name="Data Access Layer" />
+    </root>
+  </artifact>
+</component>

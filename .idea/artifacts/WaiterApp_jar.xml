@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="WaiterApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/WaiterApp_jar</output-path>
+    <root id="archive" name="WaiterApp.jar">
+      <element id="module-output" name="WaiterApp" />
+      <element id="module-output" name="Data Access Layer" />
+    </root>
+  </artifact>
+</component>

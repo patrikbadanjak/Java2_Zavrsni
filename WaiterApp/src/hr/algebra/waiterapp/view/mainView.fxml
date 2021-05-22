@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.algebra.waiterapp.controller.MainViewController">
+    <top>
+        <MenuBar style="-fx-background-color: #FDF;">
+            <Menu text="File">
+                <MenuItem onAction="#saveData" text="Save data" />
+                <MenuItem onAction="#loadData" text="Load data" />
+            </Menu>
+            <Menu text="Documentation">
+                <MenuItem onAction="#createDocumentation" text="Create documentation" />
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <TabPane minHeight="545.0" minWidth="350.0" prefHeight="525.0" prefWidth="350.0">
+            <Tab closable="false" text="Create">
+                <VBox alignment="CENTER" spacing="15.0">
+                    <padding>
+                        <Insets left="10.0" right="10.0" />
+                    </padding>
+                    <GridPane vgap="15.0">
+                        <columnConstraints>
+                            <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="121.00000000000001" minWidth="0.0" percentWidth="40.0" prefWidth="0.0" />
+                            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="314.00000000000006" minWidth="10.0" prefWidth="314.00000000000006" />
+                        </columnConstraints>
+                        <rowConstraints>
+                            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        </rowConstraints>
+                        <padding>
+                            <Insets left="15.0" />
+                        </padding>
+                        <Label text="Table #" GridPane.halignment="LEFT">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="cbNumberOfTables" prefWidth="150.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <Label text="# of people" GridPane.halignment="LEFT" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <ComboBox fx:id="cbNumberOfPeople" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                    </GridPane>
+                    <ScrollPane fx:id="scrollPaneContainer" hbarPolicy="NEVER" prefHeight="326.0" prefWidth="330.0">
+                        <VBox fx:id="vboxOrderMenu" prefHeight="311.0" prefWidth="328.0" />
+                    </ScrollPane>
+                    <HBox alignment="CENTER" spacing="25.0">
+                  <Button fx:id="btnUndoRedo" disable="true" layoutX="72.0" layoutY="10.0" mnemonicParsing="false" onAction="#undoRedoAction" prefHeight="32.0" prefWidth="91.0" text="Undo" />
+                        <Button fx:id="btnCreateOrder" mnemonicParsing="false" onAction="#createOrder" prefHeight="32.0" prefWidth="91.0" text="Create order">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnReset" cancelButton="true" mnemonicParsing="false" onAction="#resetOrder" prefHeight="32.0" prefWidth="91.0" text="Reset" />
+                    </HBox>
+                </VBox>
+            </Tab>
+            <Tab closable="false" text="Pending">
+                <ScrollPane hbarPolicy="NEVER">
+                    <Accordion prefHeight="61.0" prefWidth="351.0">
+                  <panes>
+                      <TitledPane animated="false" prefHeight="25.0" prefWidth="345.0" text="Pending">
+                          <VBox fx:id="vbPendingOrders" prefHeight="200.0" prefWidth="100.0" spacing="10.0" />
+                      </TitledPane>
+                      <TitledPane animated="false" layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="345.0" text="Completed">
+                          <VBox fx:id="vbCompletedOrders" prefHeight="200.0" prefWidth="100.0" spacing="10.0" />
+                      </TitledPane>
+                  </panes></Accordion>
+                </ScrollPane>
+            </Tab>
+        </TabPane>
+
+    </center>
+</BorderPane>

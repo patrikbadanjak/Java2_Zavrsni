@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.ScrollPane?>
+
+<ScrollPane fitToWidth="true" fitToHeight="true" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hr.algebra.dashboard.controller.OrdersTabViewController">
+    <FlowPane hgap="15.0" vgap="15.0" fx:id="orderContainer">
+        <padding>
+            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+        </padding>
+    </FlowPane>
+</ScrollPane>
+
