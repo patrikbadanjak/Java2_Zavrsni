@@ -9,5 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="mssql-jdbc-8.4.1.jre8" level="application" />
     <orderEntry type="library" name="jfxrt" level="project" />
+    <orderEntry type="library" name="Maven: com.microsoft.sqlserver:mssql-jdbc:10.2.1.jre8" level="project" />
   </component>
 </module>
