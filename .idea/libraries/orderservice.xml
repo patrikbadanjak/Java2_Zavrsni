@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="orderservice">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/WaiterApp/lib/orderservice.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
